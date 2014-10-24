@@ -12,6 +12,6 @@
 guard :rspec, cmd: 'bundle exec rspec' do
   watch('driver.rb')                        { "spec" }
   watch(%r{^lib/.+\.rb$})                   { "spec" }
-  watch(%r{^spec/.+_spec\.rb$})
+  watch(%r{^spec/.+_spec\.rb$}) 
 end
 
